@@ -1,8 +1,8 @@
 <template>
 
   
-  <navBar/>
-  
+  <!-- <navBar/> -->
+
   <router-view />
 
 </template>
