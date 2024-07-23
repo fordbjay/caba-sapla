@@ -1,12 +1,24 @@
 <template>
+
+  
+  <navBar/>
+  
   <router-view />
-  <router-link :to="{name: 'home'}">Home</router-link>
-  <router-link :to="{name: 'about'}">About</router-link>
+
 </template>
 
-<script setup>
+<script>
 import {RouterView, RouterLink} from 'vue-router'
+import navBar from "./components/nav-bar.vue"
 
+
+
+export default {
+  components: {
+    navBar
+  }
+
+}
 </script>
 
 <style>
