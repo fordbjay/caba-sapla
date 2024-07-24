@@ -53,7 +53,7 @@ import navBar from '../components/nav-bar.vue';
     align-items:flex-start;
     height: max-content;
     background-image: url(/public/exterior.jpg);
-    height: 750px;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
