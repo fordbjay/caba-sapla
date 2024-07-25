@@ -1,12 +1,10 @@
 <template>
 
-<mainHeader/>
+    <mainHeader/>
 
-<info/>
+    <info/>
 
-<drone/>
-
-
+    <drone/>
 
 </template>
 

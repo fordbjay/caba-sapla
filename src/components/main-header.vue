@@ -7,7 +7,7 @@
             <a class="action-btn" href="https://google.com" target="_blank">Submit Your Application</a>
         </div>
     
-        <h1 class="tag-line-container">Your Next Home <br> in the Riviera Maya</h1>  
+        <p class="tag-line-container">Your Next Home <br> in the Riviera Maya</p>  
         
     </div>
         
@@ -25,6 +25,9 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     
     .header-wrapper {
@@ -34,7 +37,8 @@
     }
     
     #logo {
-        width: 40%;
+        /* width: 40%; */
+        min-width: 200px;
         max-width: 300px;
     }
     
@@ -57,12 +61,28 @@
         font-size: 60px;
         font-family: 'beach-party';
         text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
-        position: absolute;
-        bottom: 50px;
-        right: 100px;
+        padding: 50px;
+        /* position: absolute; */
+        /* bottom: 50px; */
+        /* right: 100px; */
         letter-spacing: 2px;
         font-weight: 100;
         text-align: right;
+    }
+
+    @media screen and (max-width: 575px) {
+        .header-wrapper {
+            flex-direction: column;
+        }
+
+        .action-btn {
+            margin-top: 40px;
+        }
+
+        .tag-line-container {
+            font-size: 40px;
+            text-align: center;
+        }
     }
     
     </style>
