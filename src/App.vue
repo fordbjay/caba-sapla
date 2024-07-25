@@ -9,13 +9,9 @@
 
 <script>
 import {RouterView, RouterLink} from 'vue-router'
-import navBar from "./components/nav-bar.vue"
-
-
 
 export default {
   components: {
-    navBar
   }
 
 }
@@ -29,7 +25,7 @@ export default {
 
 @font-face {
     font-family: beach-party;
-    src: url('/public/beach-party.otf');
+    src: url('/beach-party.otf');
 }
 
 

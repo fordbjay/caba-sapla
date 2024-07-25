@@ -1,7 +1,8 @@
 <template>
-    <h1>
-        About
-    </h1>
+      <div class="nav-bar">
+        <router-link :to="{name: 'home'}">Home</router-link>
+        <router-link :to="{name: 'about'}">About</router-link>
+    </div>
 </template>
 
 <script>
