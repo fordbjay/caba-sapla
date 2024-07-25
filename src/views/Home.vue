@@ -3,12 +3,12 @@
 
 <div class="main-container">
 
-    <img id="logo" src="/cabasapla-logo-white.png" alt="logo">
-    <a class="action-btn" href="https://google.com" target="_blank">Submit Your Application</a>
+    <div class="header-wrapper">
+        <img id="logo" src="/cabasapla-logo-white.png" alt="logo">
+        <a class="action-btn" href="https://google.com" target="_blank">Submit Your Application</a>
+    </div>
 
     <h1 class="tag-line-container">Your Next Home <br> in the Riviera Maya</h1>  
-    
-
     
 </div>
 
@@ -47,11 +47,6 @@ import navBar from '../components/nav-bar.vue';
 <style scoped>
 
 .main-container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items:flex-start;
-    height: max-content;
     background-image: url(/public/exterior.jpg);
     height: 100vh;
     background-position: center;
@@ -60,16 +55,23 @@ import navBar from '../components/nav-bar.vue';
     /* position: relative; */
 }
 
+.header-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid; */
+}
+
 #logo {
     width: 40%;
     max-width: 300px;
-    margin-left: 45px;
+    /* margin-left: 45px; */
+    /* border: 1px solid; */
 }
 
 .action-btn {
     cursor: pointer;
     text-decoration: none;
-    margin: 60px;
     padding: 20px 40px;
     border-radius: 50px;
     border: none;
@@ -89,8 +91,9 @@ import navBar from '../components/nav-bar.vue';
 
 .tag-line-container {
     color: white;
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'beach-party';
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
     position: absolute;
     bottom: 50px;
     right: 100px;
