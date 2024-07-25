@@ -4,9 +4,9 @@
 <div class="main-container">
 
     <img id="logo" src="/cabasapla-logo-white.png" alt="logo">
-    <a class="action-btn" href="https://google.com" target="_blank">Submit Application</a>
+    <a class="action-btn" href="https://google.com" target="_blank">Submit Your Application</a>
 
-    <!-- <h1 class="tag-line-container">Your Next Home in the Riviera Maya</h1>   -->
+    <h1 class="tag-line-container">Your Next Home <br> in the Riviera Maya</h1>  
     
 
     
@@ -75,7 +75,10 @@ import navBar from '../components/nav-bar.vue';
     border: none;
     background-color: green;
     color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'beach-party';
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
 
 .loop-video {
@@ -84,14 +87,16 @@ import navBar from '../components/nav-bar.vue';
     z-index: -1000;
 }
 
-/* .tag-line-container {
+.tag-line-container {
     color: white;
     font-size: 50px;
-    font-family: cursive;
+    font-family: 'beach-party';
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    border:1px solid;
-} */
+    bottom: 50px;
+    right: 100px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    text-align: right;
+}
 
 </style>

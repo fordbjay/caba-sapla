@@ -27,4 +27,10 @@ export default {
   padding:0;
 }
 
+@font-face {
+    font-family: beach-party;
+    src: url('/public/beach-party.otf');
+}
+
+
 </style>
