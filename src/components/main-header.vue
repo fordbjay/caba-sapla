@@ -32,14 +32,13 @@
     
     .header-wrapper {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        margin: 0 50px;
     }
     
     #logo {
-        /* width: 40%; */
-        min-width: 200px;
-        max-width: 300px;
+        width: 300px;
     }
     
     .action-btn {
@@ -62,9 +61,6 @@
         font-family: 'beach-party';
         text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
         padding: 50px;
-        /* position: absolute; */
-        /* bottom: 50px; */
-        /* right: 100px; */
         letter-spacing: 2px;
         font-weight: 100;
         text-align: right;
@@ -73,10 +69,8 @@
     @media screen and (max-width: 575px) {
         .header-wrapper {
             flex-direction: column;
-        }
-
-        .action-btn {
-            margin-top: 40px;
+            justify-content: space-between;
+            height: 70%;
         }
 
         .tag-line-container {

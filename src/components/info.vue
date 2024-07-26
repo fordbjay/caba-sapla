@@ -1,7 +1,12 @@
 <template>
 
     <div class="main-container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, obcaecati at? Consequatur obcaecati odit veritatis nobis ratione est, consequuntur dolores.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Aliquam, obcaecati at? Consequatur obcaecati odit veritatis 
+            nobis ratione est, consequuntur dolores. onsectetur 
+            adipisicing elit. Aliquam, obcaecati.
+        </p>
         
         <ul style="line-height:180%">
             <li>Fully Furnished</li>
