@@ -5,7 +5,7 @@
         <div class="header-wrapper">
             <img id="logo" src="/cabasapla-logo-white.png" alt="logo">
             <!-- <img src="/wa-contact-qrcode.png" alt="exterior-2"> -->
-            <a class="action-btn" href="https://google.com" target="_blank">Contact Us Today!</a>
+            <a class="action-btn" href="https://wa.me/qr/JPECI3TMBSQMJ1" target="_blank">Contact Us Today!</a>
         </div>
     
         <p class="tag-line-container">Your Next Home <br> in the Riviera Maya</p>  
