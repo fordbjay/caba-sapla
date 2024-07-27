@@ -4,7 +4,8 @@
     
         <div class="header-wrapper">
             <img id="logo" src="/cabasapla-logo-white.png" alt="logo">
-            <a class="action-btn" href="https://google.com" target="_blank">Submit Your Application</a>
+            <!-- <img src="/wa-contact-qrcode.png" alt="exterior-2"> -->
+            <a class="action-btn" href="https://google.com" target="_blank">Contact Us Today!</a>
         </div>
     
         <p class="tag-line-container">Your Next Home <br> in the Riviera Maya</p>  
@@ -47,6 +48,7 @@
         padding: 20px 40px;
         border-radius: 50px;
         border: none;
+        /* border: 5px solid green; */
         background-color: green;
         color: white;
         font-family: 'beach-party';
@@ -66,7 +68,7 @@
         text-align: right;
     }
 
-    @media screen and (max-width: 575px) {
+    @media screen and (max-width: 675px) {
         .header-wrapper {
             flex-direction: column;
             justify-content: space-between;

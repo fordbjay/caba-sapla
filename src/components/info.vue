@@ -2,13 +2,17 @@
 
     <div class="main-container">
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Aliquam, obcaecati at? Consequatur obcaecati odit veritatis 
-            nobis ratione est, consequuntur dolores. onsectetur 
-            adipisicing elit. Aliquam, obcaecati.
+            Enjoy the best of Playa del Carmen, Mexico in our new, bright
+            and well appointed studios in the heart of town.
+            <br><br>These studios are perfect for digital nomads, travellers
+            and anyone who wants to feel instantly at home while experiencing all
+            that Mexico has to offer.
+
+            <br><br>Relaxation and comfort await you each day at Caba
+            Sapla!
         </p>
         
-        <ul style="line-height:180%">
+        <ul style="line-height:180%; font-size: 18px;">
             <li>Fully Furnished</li>
             <li>Fast Internet</li>
             <li>Smart TV</li>
@@ -16,7 +20,9 @@
             <li>Ceiling Fan</li>
         </ul>
 
-        <img src="/exterior-2.jpg" alt="exterior-2">
+        <!-- <img src="/exterior-2.jpg" alt="exterior-2"> -->
+        <img src="/wa-contact-qrcode.png" alt="exterior-2">
+
     </div>
 
 </template>
@@ -32,9 +38,9 @@
     border-radius: 10px;
     transform: translateY(-20px);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3),0 1px 3px 1px rgba(60,64,67,.15);
-    height: 300px;
     width: 80%;
-    max-width: 800px;
+    min-width: 650px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -49,11 +55,20 @@
 
 p {
     text-align: justify;
-    width: 150px;
+    width: 200px;
+    line-height: 120%;
 }
 
 img {
-    height: 80%;
+    height: 250px;
+}
+
+@media screen and (max-width: 675px) {
+    .main-container {
+        flex-direction: column;
+        width: 50px;
+        margin: 0 auto;
+    }
 }
 
 
