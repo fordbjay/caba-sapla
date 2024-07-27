@@ -21,7 +21,7 @@
         </ul>
 
         <!-- <img src="/exterior-2.jpg" alt="exterior-2"> -->
-        <img src="/wa-contact-qrcode.png" alt="exterior-2">
+        <a href="https://wa.me/qr/JPECI3TMBSQMJ1" target="_blank"><img src="/wa-contact-qrcode.png" alt="exterior-2"></a>
 
     </div>
 
