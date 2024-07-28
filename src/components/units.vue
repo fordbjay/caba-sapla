@@ -1,14 +1,15 @@
 <template>
 
     <div 
-    style=" display: flex; justify-content: space-between; align-items: center; margin: 12px auto; width: 80%; max-width: 900px;">
+        style="border: 1px solid; display: flex; justify-content: space-between; align-items: center; margin: 12px auto; width: 100%;"
+    >
         <div v-for="(unit, index) in units" style="display: flex; flex-direction: column; align-items: center;">
-            <h1 style="font-weight: 100; font-family: 'beach-party'">{{ unit.name }}</h1>
-            <div @click="showUnit(index)" style="overflow: hidden; border-radius: 50%; width: 200px; height: 200px;">
+            <div @click="showUnit(index)" style="cursor: pointer;position: relative; overflow: hidden; border-radius: 50%; width: 200px; height: 200px;">
+                <p style="text-shadow: 1px 1px 2px rgba(0,0,0,0.75); width: 100%; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 80px; color: white; font-weight: 100; font-family: 'beach-party'">Unit {{ unit.name }}</p>
                 <img 
                     style=" height: 100%;"
                     :src="unit.pics[1]" 
-                    alt=""
+                    :alt="unit.pics[index]"
                 >
             </div>
             <!-- <ul class="details" style="width: 200px;">
@@ -24,7 +25,7 @@
     <div class="popup-main-container" v-if="unitDetailsOpen">
 
         <div style="display: flex; justify-content: space-around; width: 100%; max-width: 900px;">
-            <p style="font-family: 'beach-party'; font-size: 50px; ">{{units[unitClicked].name}}</p>
+            <p style="font-family: 'beach-party'; font-size: 50px;">Unit {{units[unitClicked].name}}</p>
             <ul class="details">
                 <li>{{units[unitClicked].price}} Pesos/Month plus Electricity (separate meter)</li>
                 <li>Water, Wi-Fi included</li>
@@ -69,7 +70,7 @@
                 imgClicked: 1,
                 units: [
                     {
-                        name: 'Unit A',
+                        name: 'A',
                         price: '11,000',
                         pics: [
                         "/units-pics/a/IMG_4380.jpg",
@@ -80,33 +81,35 @@
                         "/units-pics/a/IMG_4394.jpg",
                         "/units-pics/a/IMG_4410.jpg",
                         "/units-pics/a/IMG_4475.jpg",
-                        //   "/units-pics/a/IMG_4416.jpg",
-                        "/units-pics/a/IMG_4112.jpg",
+                        "/units-pics/a/IMG_4101.jpg"
+                        //  "/units-pics/a/IMG_4416.jpg",
+                        // "/units-pics/a/IMG_4112.jpg",
                         ],
 
                     },
                     {
-                        name: 'Unit B',
+                        name: 'B',
                         price: '12,000',
                         pics: [
                             "/units-pics/b/IMG_4258.jpg",
                             "/units-pics/b/IMG_4237.jpg",
                             "/units-pics/b/IMG_4173.jpg",
                             "/units-pics/b/IMG_4129.jpg",
-                            "/units-pics/b/IMG_4094.jpg",
+                            // "/units-pics/b/IMG_4094.jpg",
                             "/units-pics/b/IMG_4283.jpg",
                             "/units-pics/b/IMG_4289.jpg",
                             "/units-pics/b/IMG_4296.jpg",
                             //   "/units-pics/b/IMG_4296.jpg",
                             "/units-pics/b/IMG_4311.jpg",
+                            "/units-pics/b/IMG_4089.jpg",
                         ],
 
                     },
                     {
-                        name: 'Unit C',
+                        name: 'C',
                         price: '13,000',
                         pics: [
-                            "/units-pics/c/IMG_4077.jpg",
+                            // "/units-pics/c/IMG_4077.jpg",
                             "/units-pics/c/IMG_4197.jpg",
                             "/units-pics/c/IMG_4132.jpg",
                             "/units-pics/c/IMG_4204.jpg",
@@ -115,7 +118,8 @@
                             "/units-pics/c/IMG_4222.jpg",
                             "/units-pics/c/IMG_4230.jpg",
                             //   "/units-pics/b/IMG_4235.jpg",
-                            "/units-pics/b/IMG_4323.jpg",
+                            "/units-pics/c/IMG_4323.jpg",
+                            "/units-pics/c/IMG_4097.jpg",
                         ],
                     },
                 ]
