@@ -1,6 +1,6 @@
 <template>
 
-    <video class="loop-video" autoplay loop muted src="/cabasapla-drone-1000kbps.mp4"></video>
+    <video class="loop-video" playsinline="playsinline" data-wf-ignore autoplay loop muted src="/cabasapla-drone-1000kbps.mp4"></video>
 
 </template>
 
