@@ -1,15 +1,10 @@
 <template>
 
-    <div 
-        style="border: 1px solid; display: flex; justify-content: space-between; align-items: center; margin: 12px auto; width: 100%;"
-    >
-        <div v-for="(unit, index) in units" style="display: flex; flex-direction: column; align-items: center;">
-            <div @click="showUnit(index)" style="cursor: pointer;position: relative; overflow: hidden; border-radius: 50%; width: 200px; height: 200px;">
-                <p style="text-shadow: 1px 1px 2px rgba(0,0,0,0.75); width: 100%; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 80px; color: white; font-weight: 100; font-family: 'beach-party'">Unit {{ unit.name }}</p>
-                <img 
-                    style=" height: 100%;"
-                    :src="unit.pics[1]" 
-                    :alt="unit.pics[index]"
+    <div class="units-main-container">
+        <div v-for="(unit, index) in units" class="units-wrapper">
+            <div @click="showUnit(index)" class="inner-pic-text">
+                <p class="text"><span style="font-size: 55px;">Unit</span> {{ unit.name }}</p>
+                <img :src="unit.pics[1]" :alt="unit.pics[index]"
                 >
             </div>
             <!-- <ul class="details" style="width: 200px;">
@@ -51,7 +46,7 @@
     
 </template>
     
-    <script>
+<script>
     
     
     export default {
@@ -128,11 +123,55 @@
     
     }
     
+</script>
     
-    </script>
     
-    
-    <style scoped>
+<style scoped>
+
+    .units-main-container {
+        display: flex;
+        justify-content: space-around;
+        max-width: 900px;
+        /* border: 1px solid; */
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .units-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .inner-pic-text {
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .inner-pic-text img {
+        height: 100%;
+    }
+
+    .text {
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 80px;
+        color: white;
+        font-weight: 100;
+        font-family: 'beach-party'
+    }
+
     
     .popup-main-container {
         display: flex;
@@ -198,8 +237,14 @@
         height: 100px;
         object-fit: cover;
     }
+
+    @media screen and (max-width: 675px) {
+    .units-main-container {
+        flex-direction: column;
+    }
+}
     
-    </style>
+</style>
     
     
     

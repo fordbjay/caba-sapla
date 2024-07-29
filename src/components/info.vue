@@ -21,7 +21,9 @@
         </ul>
 
         <!-- <img src="/exterior-2.jpg" alt="exterior-2"> -->
-        <a href="https://wa.me/qr/JPECI3TMBSQMJ1" target="_blank"><img src="/wa-contact-qrcode.png" alt="exterior-2"></a>
+        <a href="https://wa.me/qr/JPECI3TMBSQMJ1" target="_blank">
+            <img src="/wa-contact-qrcode.png" alt="exterior-2">
+        </a>
 
     </div>
 
@@ -34,19 +36,20 @@
 <style scoped>
 
 .main-container {
-    background-color: rgb(246, 246, 246);
+    background-color: rgb(250, 247, 243);
     border-radius: 10px;
-    transform: translateY(-20px);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3),0 1px 3px 1px rgba(60,64,67,.15);
     width: 80%;
-    min-width: 650px;
-    max-width: 900px;
+    height: max-content;
+    /* min-width: 650px;
+    max-width: 900px; */
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 200;
+    margin: 20px auto;
 }
 
 .main-container > * {
@@ -61,13 +64,31 @@ p {
 
 img {
     height: 250px;
+    /* width: 100%;; */
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 850px) {
     .main-container {
         flex-direction: column;
-        width: 50px;
-        margin: 0 auto;
+        margin: 20px auto;
+        align-items: center;
+    }
+
+    .main-container > * {
+    padding: 10px;
+}
+
+    p {
+        width: 80%;
+    }
+
+    a {
+        width: 50%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
     }
 }
 
