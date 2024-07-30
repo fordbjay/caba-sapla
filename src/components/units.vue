@@ -4,7 +4,7 @@
         <div v-for="(unit, index) in units" :class="{'units-wrapper': true, 'selected-unit': unitClicked !==null && unitClicked !==index }">
             <div @click="showUnit(index)" class="inner-pic-text">
                 <p class="text"><span style="font-size: 55px;">Unit</span> {{ unit.name }}</p>
-                <img :src="unit.pics[1]" :alt="unit.pics[index]"
+                <img :src="unit.pics[0]" :alt="unit.pics[index]"
                 >
             </div>
         </div>
@@ -83,8 +83,8 @@
                         name: 'B',
                         price: '13,000',
                         pics: [
-                            "/units-pics/b/IMG_4258.jpg",
                             "/units-pics/b/IMG_4237.jpg",
+                            "/units-pics/b/IMG_4258.jpg",
                             "/units-pics/b/IMG_4173.jpg",
                             "/units-pics/b/IMG_4129.jpg",
                             // "/units-pics/b/IMG_4094.jpg",
@@ -101,16 +101,16 @@
                         name: 'C',
                         price: '12,000',
                         pics: [
-                            // "/units-pics/c/IMG_4077.jpg",
+                            "/units-pics/c/IMG_4323.jpg",
+                            "/units-pics/c/IMG_4230.jpg",
+                            "/units-pics/c/IMG_4220.jpg",
                             "/units-pics/c/IMG_4197.jpg",
                             "/units-pics/c/IMG_4132.jpg",
+                            // "/units-pics/c/IMG_4077.jpg",
                             // "/units-pics/c/IMG_4204.jpg",
                             "/units-pics/c/IMG_4216.jpg",
-                            "/units-pics/c/IMG_4220.jpg",
                             "/units-pics/c/IMG_4222.jpg",
-                            "/units-pics/c/IMG_4230.jpg",
                             "/units-pics/c/IMG_4235.jpg",
-                            "/units-pics/c/IMG_4323.jpg",
                             "/units-pics/c/IMG_4097.jpg",
                         ],
                     },

@@ -2,7 +2,7 @@
 
     <div class="main-container">
         <p>
-            Enjoy the best of Playa del Carmen, Mexico in our new, bright
+            <span style="font-family: 'beach-party'; font-size: 35px;">Enjoy the best</span> of Playa del Carmen, Mexico in our new, bright
             and well appointed studios in the heart of town.
             <br><br>These studios are perfect for digital nomads, travellers
             and anyone who wants to feel instantly at home while experiencing all
@@ -19,8 +19,6 @@
             <li>Air Conditioner</li>
             <li>Ceiling Fan</li>
         </ul>
-
-        <!-- <img src="/exterior-2.jpg" alt="exterior-2"> -->
         <a href="https://wa.me/qr/JPECI3TMBSQMJ1" target="_blank">
             <img src="/wa-contact-qrcode.png" alt="exterior-2">
         </a>
@@ -43,13 +41,13 @@
     height: max-content;
     /* min-width: 650px;
     max-width: 900px; */
-    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 200;
     margin: 20px auto;
+    padding: 10px 0;
 }
 
 .main-container > * {
@@ -59,12 +57,11 @@
 p {
     text-align: justify;
     width: 200px;
-    line-height: 120%;
+    line-height: 130%;
 }
 
 img {
     height: 250px;
-    /* width: 100%;; */
 }
 
 @media screen and (max-width: 850px) {
