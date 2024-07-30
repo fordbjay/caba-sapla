@@ -41,18 +41,27 @@
     
     
     export default {
+        mounted() {
+            window.addEventListener('resize', this.updateWindowWidth);
+        },
+        beforeDestroy() {
+            window.removeEventListener('resize', this.updateWindowWidth);
+        },
 
         methods: {
+            updateWindowWidth() {
+                this.isSmallScreen = window.innerWidth <= 675;
+            },
             showUnit(index) {
 
                 console.log(window.innerWidth)
                 if (window.innerWidth <= 675) {
-                    // this.$nextTick(() => {
+                    this.$nextTick(() => {
                         const detailsDiv = this.$refs.details;
                         if (detailsDiv) {
                             detailsDiv.scrollIntoView({behavior: 'smooth'});
                         }
-                    // })
+                    })
                 }
 
                 if (this.unitClicked === index) {
@@ -197,8 +206,8 @@
     }
 
     .selected-unit {
-        opacity: 0.15;
-        animation: fadeOut .15s ease-in-out;
+        /* opacity: 0.15; */
+        animation: fadeOut .15s ease-out;
     }
 
     .details {
