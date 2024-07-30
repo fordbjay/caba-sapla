@@ -10,7 +10,7 @@
         </div>
     </div>
 
-    <div class="popup-main-container" v-if="unitDetailsOpen">
+    <div class="popup-main-container" ref="unitDetails" v-if="unitDetailsOpen">
 
         <div class="pic-container">
             <div class="featured-picture">
@@ -44,7 +44,7 @@
 
         methods: {
             showUnit(index) {
-                
+
                 this.imgClicked = 0;
 
                 if (this.unitClicked === index) {
@@ -55,6 +55,12 @@
                     this.unitDetailsOpen = true
                     this.unitClicked = index
                 }
+
+                this.$nextTick(() => {
+                    if (window.innerWidth < 675) {
+                    this.$refs.unitDetails.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
             }
         },
     
