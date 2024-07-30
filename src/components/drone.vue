@@ -3,7 +3,7 @@
     <div style="height: 100%; width: 100%; position: relative;">
         <div class="footer">
             <img style="width: 150px;" src="/cabasapla-logo-white.png" alt="">
-            <h3>&copy; {{new Date().getFullYear()}}</h3>
+            <h3 style="transform: translateY(-15px)">&copy; {{new Date().getFullYear()}}</h3>
         </div>
         <video class="loop-video" playsinline="playsinline" data-wf-ignore autoplay loop muted src="/cabasapla-drone-1000kbps.mp4"></video>
     </div>
@@ -29,7 +29,7 @@
     font-family: 'beach-party';
     letter-spacing: 1px;
     font-weight: 100;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: end;
     bottom: 0;
     width: 100%;

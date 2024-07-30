@@ -44,6 +44,9 @@
 
         methods: {
             showUnit(index) {
+                
+                this.imgClicked = 0;
+
                 if (this.unitClicked === index) {
                     this.unitDetailsOpen = !this.unitDetailsOpen
                     this.unitClicked = null
