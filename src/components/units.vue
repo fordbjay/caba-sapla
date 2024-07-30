@@ -10,7 +10,7 @@
         </div>
     </div>
 
-    <div class="popup-main-container" ref="details" v-if="unitDetailsOpen">
+    <div class="popup-main-container" v-if="unitDetailsOpen">
 
         <div class="pic-container">
             <div class="featured-picture">
@@ -41,29 +41,9 @@
     
     
     export default {
-        mounted() {
-            window.addEventListener('resize', this.updateWindowWidth);
-        },
-        beforeDestroy() {
-            window.removeEventListener('resize', this.updateWindowWidth);
-        },
 
         methods: {
-            updateWindowWidth() {
-                this.isSmallScreen = window.innerWidth <= 675;
-            },
             showUnit(index) {
-
-                console.log(window.innerWidth)
-                if (window.innerWidth <= 675) {
-                    this.$nextTick(() => {
-                        const detailsDiv = this.$refs.details;
-                        if (detailsDiv) {
-                            detailsDiv.scrollIntoView({behavior: 'smooth'});
-                        }
-                    })
-                }
-
                 if (this.unitClicked === index) {
                     this.unitDetailsOpen = !this.unitDetailsOpen
                     this.unitClicked = null
@@ -206,7 +186,7 @@
     }
 
     .selected-unit {
-        /* opacity: 0.15; */
+        opacity: 0.15;
         animation: fadeOut .15s ease-out;
     }
 
