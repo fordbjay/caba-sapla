@@ -10,7 +10,7 @@
         </div>
     </div>
 
-    <div class="popup-main-container" v-if="unitDetailsOpen">
+    <div class="popup-main-container" ref="details" v-if="unitDetailsOpen">
 
         <div class="pic-container">
             <div class="featured-picture">
@@ -44,6 +44,17 @@
 
         methods: {
             showUnit(index) {
+
+                console.log(window.innerWidth)
+                if (window.innerWidth <= 675) {
+                    this.$nextTick(() => {
+                        const detailsDiv = this.$refs.details;
+                        if (detailsDiv) {
+                            detailsDiv.scrollIntoView({behavior: 'smooth'});
+                        }
+                    })
+                }
+
                 if (this.unitClicked === index) {
                     this.unitDetailsOpen = !this.unitDetailsOpen
                     this.unitClicked = null
@@ -187,6 +198,7 @@
 
     .selected-unit {
         opacity: 0.15;
+        animation: fadeOut .15s ease-in-out;
     }
 
     .details {
@@ -245,6 +257,12 @@
         height: 100px;
         object-fit: cover;
     }
+
+    @keyframes fadeOut {
+        from { opacity: 1; }
+        to { opacity: 0.15; }
+}
+
 
     @media screen and (max-width: 675px) {
     .units-main-container {
