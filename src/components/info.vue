@@ -57,7 +57,7 @@
 
 p {
     text-align: justify;
-    width: 300px;
+    width: 200px;
     line-height: 130%;
 }
 
@@ -65,7 +65,7 @@ img {
     height: 250px;
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 850px) {
     .main-container {
         flex-direction: column;
         margin: 20px auto;
@@ -77,7 +77,7 @@ img {
 }
 
     p {
-        width: 80%;
+        width: 50%;
     }
 
     a {
