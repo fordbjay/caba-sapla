@@ -17,6 +17,7 @@
                 class="featured-picture"
                 :src="units[unitClicked].pics[imgClicked]"
                 alt="Featured Picture"
+                @click="expandPic()"
             >
             <div class="grid">
                 <img
@@ -34,6 +35,16 @@
         </ul>
 
     </div>
+
+    <!-- MODAL  @click="closePic()"-->
+    <div
+        v-if="unitDetailsOpen"
+        :class="{ modal: true, open: modalOpen }"
+        @click="closePic()"
+    >
+            <!-- <div style="position: absolute; font-size: 75px; color: white; top: 20px; right: 40px">&#x2715;</div> -->
+            <img draggable="false" class="selected-image" :src="this.units[this.unitClicked].pics[this.imgClicked]" alt="selected-image">
+    </div>
         
     
     
@@ -45,6 +56,14 @@
     export default {
 
         methods: {
+            expandPic() {
+                if(window.innerWidth > 700) {
+                    this.modalOpen = true;
+                }
+            },
+            closePic() {
+                this.modalOpen = false
+            },
             showUnit(index) {
 
                 console.log(this.unitDetailsOpen)
@@ -65,8 +84,6 @@
                     this.$refs.unitDetails.scrollIntoView({ behavior: 'smooth' });
                     }
                 });
-
-                console.log(this.unitDetailsOpen)
             }
         },
     
@@ -74,7 +91,8 @@
             return {
                 unitDetailsOpen: false,
                 unitClicked: null,
-                imgClicked: 1,
+                imgClicked: null,
+                modalOpen: false,
                 units: [
                     {
                         name: 'A',
@@ -140,6 +158,30 @@
     
 <style scoped>
 
+    .modal {
+            display: none;
+        }
+
+    .modal.open {
+        z-index: 999;
+        position: fixed;
+        /* border: 1px solid; */
+        top: 0;
+        left: 0px;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(160, 160, 160, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .selected-image {
+        cursor: pointer;
+        user-select: none;
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
     .units-main-container {
         display: flex;
         justify-content: space-around;
@@ -158,6 +200,7 @@
     }
 
     .inner-pic-text {
+        user-select: none;
         cursor: pointer;
         position: relative;
         overflow: hidden;
@@ -167,6 +210,7 @@
     }
 
     .inner-pic-text img {
+        user-select: none; 
         height: 100%;
     }
 
@@ -212,17 +256,13 @@
     
     
     .pic-container {
-        /* margin: 0 auto; */
         display: flex;
-        /* justify-content: space-between; */
         align-items: center;
-        /* max-width: 900px; */
-        /* width: 90%; */
-        /* border: 1px solid; */
         
     }
     
     .featured-picture {
+        cursor: pointer;
         width: 450px;
         flex: 1;
         display: flex;
@@ -239,12 +279,11 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         height: 100%;
-        /* padding: 20px; */
         box-sizing: border-box;
-        /* border: 1px solid; */
     }
     
     .grid img {
+        user-select: none;
         cursor: pointer;
         width: 100%;
         height: 100px;
