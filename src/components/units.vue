@@ -13,9 +13,11 @@
     <div class="popup-main-container" ref="unitDetails" v-if="unitDetailsOpen">
 
         <div class="pic-container">
-            <div class="featured-picture">
-                <img :src="units[unitClicked].pics[imgClicked]" alt="Featured Picture">
-            </div>
+            <img 
+                class="featured-picture"
+                :src="units[unitClicked].pics[imgClicked]"
+                alt="Featured Picture"
+            >
             <div class="grid">
                 <img
                     v-for="(pic, index) in units[unitClicked].pics"
@@ -32,7 +34,7 @@
         </ul>
 
     </div>
-    
+        
     
     
 </template>
@@ -44,6 +46,8 @@
 
         methods: {
             showUnit(index) {
+
+                console.log(this.unitDetailsOpen)
 
                 this.imgClicked = 0;
 
@@ -61,6 +65,8 @@
                     this.$refs.unitDetails.scrollIntoView({ behavior: 'smooth' });
                     }
                 });
+
+                console.log(this.unitDetailsOpen)
             }
         },
     
@@ -151,13 +157,6 @@
         margin: 10px;
     }
 
-    /* .main-text-wrapper {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        max-width: 900px;
-    } */
-
     .inner-pic-text {
         cursor: pointer;
         position: relative;
@@ -189,18 +188,23 @@
     .popup-main-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        width: max-content;
+        /* align-items: center; */
         /* border: 1px solid; */
         margin: 0 auto 30px auto;
+        width: 90%;
+        max-width: 900px;
+        animation: slideDown 0.25s ease-in-out;
     }
 
     .selected-unit {
         opacity: 0.15;
-        animation: fadeOut .15s ease-out;
+        animation: fadeOut .25s ease-out;
     }
 
     .details {
         margin: 10px 0;
+        transform: translateX(20px);
         font-size: 18px;
         font-weight: 100;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -208,17 +212,18 @@
     
     
     .pic-container {
-        margin: 0 auto;
+        /* margin: 0 auto; */
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         align-items: center;
-        max-width: 900px;
-        width: 90%;
+        /* max-width: 900px; */
+        /* width: 90%; */
         /* border: 1px solid; */
         
     }
     
     .featured-picture {
+        width: 450px;
         flex: 1;
         display: flex;
         justify-content: center;
@@ -226,16 +231,6 @@
         background-color: #000000;
         height: 100%;
         margin-right: 10px;
-        /* border: 1px solid blue; */
-    }
-    
-    .featured-picture img {
-        height: 100%;
-        width: 450px;
-        /* max-width: 100%;
-        max-height: 100%; */
-        object-fit: cover;
-        /* border: 1px solid purple; */
     }
     
     .grid {
@@ -259,7 +254,18 @@
     @keyframes fadeOut {
         from { opacity: 1; }
         to { opacity: 0.15; }
-}
+    }
+
+    @keyframes slideDown {
+        from {
+            max-height: 0;
+            opacity: 0;
+        }
+        to {
+            max-height: max-content; /* Adjust based on content size */
+            opacity: 1;
+        }
+    }
 
 
     @media screen and (max-width: 675px) {
@@ -271,6 +277,14 @@
         flex-direction: column;
     }
 
+    .popup-main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 1px solid; */
+        /* margin: 0 auto 30px auto; */
+    }
+
     .featured-picture {
         margin-right: 0px;
     }
@@ -280,13 +294,19 @@
         padding-left: 0px;
     }
 
-    @media screen and (max-width: 675px) {
-        .main-text-wrapper {
+    .details {
+        transform: translateX(0px);
+    }
+
+    .main-text-wrapper {
             flex-direction: column;
             align-items: center;
         }
+
+        .featured-picture {
+            width: 100%;
+        }
     }
-}
     
 </style>
     
