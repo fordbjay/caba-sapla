@@ -47,12 +47,12 @@
 
                 console.log(window.innerWidth)
                 if (window.innerWidth <= 675) {
-                    this.$nextTick(() => {
+                    // this.$nextTick(() => {
                         const detailsDiv = this.$refs.details;
                         if (detailsDiv) {
                             detailsDiv.scrollIntoView({behavior: 'smooth'});
                         }
-                    })
+                    // })
                 }
 
                 if (this.unitClicked === index) {
