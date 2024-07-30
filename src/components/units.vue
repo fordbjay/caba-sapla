@@ -1,31 +1,16 @@
 <template>
 
     <div class="units-main-container">
-        <div v-for="(unit, index) in units" class="units-wrapper">
+        <div v-for="(unit, index) in units" :class="{'units-wrapper': true, 'selected-unit': unitClicked !==null && unitClicked !==index }">
             <div @click="showUnit(index)" class="inner-pic-text">
                 <p class="text"><span style="font-size: 55px;">Unit</span> {{ unit.name }}</p>
                 <img :src="unit.pics[1]" :alt="unit.pics[index]"
                 >
             </div>
-            <!-- <ul class="details" style="width: 200px;">
-                <li>{{units[unitClicked].price}} Pesos/Month plus Electricity (separate meter)</li>
-                <li>Water, Wi-Fi included</li>
-            </ul> -->
         </div>
-
     </div>
 
-
-
     <div class="popup-main-container" v-if="unitDetailsOpen">
-
-        <div style="display: flex; justify-content: space-around; width: 100%; max-width: 900px;">
-            <p style="font-family: 'beach-party'; font-size: 50px;">Unit {{units[unitClicked].name}}</p>
-            <ul class="details">
-                <li>{{units[unitClicked].price}} Pesos/Month plus Electricity (separate meter)</li>
-                <li>Water, Wi-Fi included</li>
-            </ul>
-        </div>
 
         <div class="pic-container">
             <div class="featured-picture">
@@ -41,8 +26,14 @@
                     
             </div>
         </div>
+        <ul class="details">
+            <li>{{units[unitClicked].price}} Pesos/Month plus Electricity (separate meter)</li>
+            <li>Water, Wi-Fi included</li>
+        </ul>
 
     </div>
+    
+    
     
 </template>
     
@@ -53,15 +44,21 @@
 
         methods: {
             showUnit(index) {
-                this.unitDetailsOpen = !this.unitDetailsOpen
-                this.unitClicked = index
+                if (this.unitClicked === index) {
+                    this.unitDetailsOpen = !this.unitDetailsOpen
+                    this.unitClicked = null
+
+                } else {
+                    this.unitDetailsOpen = true
+                    this.unitClicked = index
+                }
             }
         },
     
         data() {
             return {
                 unitDetailsOpen: false,
-                unitClicked: 0,
+                unitClicked: null,
                 imgClicked: 1,
                 units: [
                     {
@@ -84,7 +81,7 @@
                     },
                     {
                         name: 'B',
-                        price: '12,000',
+                        price: '13,000',
                         pics: [
                             "/units-pics/b/IMG_4258.jpg",
                             "/units-pics/b/IMG_4237.jpg",
@@ -102,17 +99,17 @@
                     },
                     {
                         name: 'C',
-                        price: '13,000',
+                        price: '12,000',
                         pics: [
                             // "/units-pics/c/IMG_4077.jpg",
                             "/units-pics/c/IMG_4197.jpg",
                             "/units-pics/c/IMG_4132.jpg",
-                            "/units-pics/c/IMG_4204.jpg",
+                            // "/units-pics/c/IMG_4204.jpg",
                             "/units-pics/c/IMG_4216.jpg",
                             "/units-pics/c/IMG_4220.jpg",
                             "/units-pics/c/IMG_4222.jpg",
                             "/units-pics/c/IMG_4230.jpg",
-                            //   "/units-pics/b/IMG_4235.jpg",
+                            "/units-pics/c/IMG_4235.jpg",
                             "/units-pics/c/IMG_4323.jpg",
                             "/units-pics/c/IMG_4097.jpg",
                         ],
@@ -144,6 +141,13 @@
         align-items: center;
         margin: 10px;
     }
+
+    /* .main-text-wrapper {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 900px;
+    } */
 
     .inner-pic-text {
         cursor: pointer;
@@ -179,6 +183,10 @@
         align-items: center;
         /* border: 1px solid; */
         margin: 0 auto 30px auto;
+    }
+
+    .selected-unit {
+        opacity: 0.15;
     }
 
     .details {
@@ -241,6 +249,26 @@
     @media screen and (max-width: 675px) {
     .units-main-container {
         flex-direction: column;
+    }
+
+    .pic-container {
+        flex-direction: column;
+    }
+
+    .featured-picture {
+        margin-right: 0px;
+    }
+
+    .grid {
+        margin-top: 10px;
+        padding-left: 0px;
+    }
+
+    @media screen and (max-width: 675px) {
+        .main-text-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
     

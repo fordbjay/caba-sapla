@@ -2,7 +2,7 @@
     
     <div style="height: 100%; width: 100%; position: relative;">
         <div class="footer">
-            <img style="width: 150px;" src="/public/cabasapla-logo-white.png" alt="">
+            <img style="width: 150px;" src="/cabasapla-logo-white.png" alt="">
             <h2>2024</h2>
         </div>
         <video class="loop-video" playsinline="playsinline" data-wf-ignore autoplay loop muted src="/cabasapla-drone-1000kbps.mp4"></video>
