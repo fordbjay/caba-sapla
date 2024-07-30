@@ -188,7 +188,7 @@
         max-width: 900px;
         /* border: 1px solid; */
         align-items: center;
-        margin: 0 auto;
+        margin: 0 auto 20px auto;
         width: 100%;
     }
 
@@ -235,7 +235,7 @@
         width: max-content;
         /* align-items: center; */
         /* border: 1px solid; */
-        margin: 0 auto 30px auto;
+        margin: 0 auto 10px auto;
         width: 90%;
         max-width: 900px;
         animation: slideDown 0.25s ease-in-out;
