@@ -86,7 +86,7 @@ a img {
 
     .footer {
         flex-direction: column;
-        align-items: end;
+        align-items: start;
         padding: 10px
     };
 

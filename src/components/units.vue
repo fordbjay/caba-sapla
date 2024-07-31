@@ -278,6 +278,7 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         height: 100%;
+        width: 100%;
         box-sizing: border-box;
     }
     
@@ -313,20 +314,21 @@
         }
 
         .popup-main-container {
-            display: flex;
-            height: max-content;
-            border: 1px solid;
+            /* display: flex; */
+            /* border: 1px solid; */
             flex-direction: column;
             align-items: center;
         }
 
-        .featured-picture {
-            margin-right: 0px;
-        }
-
         .grid {
+            /* border: 1px solid; */
+            /* height: 100px; */
             margin-top: 10px;
             padding-left: 0px;
+            width: 100%;
+            grid-template-columns: repeat(3, 1fr); /* Adjusted to 2 columns for better fit */
+            grid-template-rows: auto;
+            gap: 10px;
         }
 
         .details {
@@ -334,6 +336,7 @@
         }
 
         .featured-picture {
+            margin-right: 0px;
             width: 100%;
         }
     }
