@@ -181,6 +181,7 @@
 
     .units-main-container {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         max-width: 900px;
         /* border: 1px solid; */
@@ -209,6 +210,7 @@
     .inner-pic-text img {
         user-select: none; 
         height: 100%;
+        width: 100%;
     }
 
     .text {
@@ -304,7 +306,7 @@
     }
 
 
-    @media screen and (max-width: 675px) {
+    @media screen and (max-width: 750px) {
     .units-main-container {
         flex-direction: column;
     }
@@ -326,6 +328,7 @@
     }
 
     .grid {
+        width: 100%;
         margin-top: 10px;
         padding-left: 0px;
     }
@@ -337,14 +340,13 @@
     .main-text-wrapper {
             flex-direction: column;
             align-items: center;
-        }
+    }
 
-        .featured-picture {
-            width: 100%;
-        }
+    .featured-picture {
+        width: 100%;
+    }
     }
     
 </style>
-    
     
     
