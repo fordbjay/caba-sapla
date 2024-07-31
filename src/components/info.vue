@@ -62,7 +62,7 @@ p {
 }
 
 img {
-    height: 250px;
+    width: 250px;
 }
 
 @media screen and (max-width: 850px) {

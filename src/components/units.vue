@@ -65,9 +65,6 @@
                 this.modalOpen = false
             },
             showUnit(index) {
-
-                console.log(this.unitDetailsOpen)
-
                 this.imgClicked = 0;
 
                 if (this.unitClicked === index) {
