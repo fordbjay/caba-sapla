@@ -316,7 +316,7 @@
 
         .popup-main-container {
             /* display: flex; */
-            border: 1px solid;
+            /* border: 1px solid; */
             flex-direction: column;
             align-items: center;
             height: max-content;
@@ -331,7 +331,7 @@
         }
 
         .details {
-            transform: translateX(10px);
+            transform: translateX(15px);
         }
 
         .featured-picture {
