@@ -246,7 +246,7 @@
     .details {
         margin: 10px 0;
         transform: translateX(20px);
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 100;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
@@ -331,7 +331,7 @@
     }
 
     .details {
-        transform: translateX(0px);
+        transform: translateX(10px);
     }
 
     .main-text-wrapper {

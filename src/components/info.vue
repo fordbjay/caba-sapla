@@ -19,10 +19,10 @@
             <li>Air Conditioner</li>
             <li>Ceiling Fan</li>
         </ul>
-        <a href="https://wa.me/qr/JPECI3TMBSQMJ1" target="_blank">
+        <!-- <a href="https://wa.me/qr/JPECI3TMBSQMJ1" target="_blank">
             <img src="/wa-contact-qrcode.png" alt="exterior-2">
-        </a>
-        <!-- <img src="/public/exterior-2.jpg" alt=""> -->
+        </a> -->
+        <img style="border-radius: 50px;" src="/exterior-2.jpg" alt="exterior-2.jpg">
 
     </div>
 
@@ -63,6 +63,7 @@ p {
 
 img {
     width: 250px;
+    height: 100%;
 }
 
 @media screen and (max-width: 850px) {
@@ -77,7 +78,7 @@ img {
 }
 
     p {
-        width: 50%;
+        width: 70%;
     }
 
     a {
@@ -85,8 +86,8 @@ img {
     }
 
     img {
-        width: 100%;
-        /* height: 250px; */
+        /* width: 100%; */
+        /* height: 100%; */
     }
 }
 
