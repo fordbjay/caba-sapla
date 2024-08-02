@@ -1,7 +1,7 @@
 <template>
 
-    <div class="units-main-container">
-        <div v-for="(unit, index) in units" :class="{'units-wrapper': true, 'selected-unit': unitClicked !==null && unitClicked !==index }">
+    <div class="units-btns-container">
+        <div v-for="(unit, index) in units" :class="{'selected-unit': unitClicked !==null && unitClicked !==index }">
             <div @click="showUnit(index)" class="inner-pic-text">
                 <p class="text"><span style="font-size: 55px;">Unit</span> {{ unit.name }}</p>
                 <img :src="unit.pics[0]" :alt="unit.pics[index]"
@@ -36,17 +36,16 @@
 
     </div>
 
-    <!-- MODAL  @click="closePic()"-->
+
+
+    <!-- MODAL -->
     <div
         v-if="unitDetailsOpen"
         :class="{ modal: true, open: modalOpen }"
         @click="closePic()"
     >
-            <!-- <div style="position: absolute; font-size: 75px; color: white; top: 20px; right: 40px">&#x2715;</div> -->
-            <img draggable="false" class="selected-image" :src="this.units[this.unitClicked].pics[this.imgClicked]" alt="selected-image">
+        <img draggable="false" class="selected-image" :src="this.units[this.unitClicked].pics[this.imgClicked]" alt="selected-image">
     </div>
-        
-    
     
 </template>
     
@@ -155,60 +154,33 @@
     
 <style scoped>
 
-    .modal {
-            display: none;
-        }
-
-    .modal.open {
-        z-index: 999;
-        position: fixed;
-        /* border: 1px solid; */
-        top: 0;
-        left: 0px;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(160, 160, 160, 0.5);
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .selected-image {
-        cursor: pointer;
-        user-select: none;
-        max-width: 100%;
-        max-height: 80vh;
-    }
-
-    .units-main-container {
+    .units-btns-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        max-width: 900px;
-        /* border: 1px solid; */
-        align-items: center;
-        margin: 0 auto 20px auto;
-        width: 100%;
-    }
-
-    .units-wrapper {
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-        margin: 10px;
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1024px;
     }
 
     .inner-pic-text {
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3),0 1px 3px 1px rgba(60,64,67,.15);
         user-select: none;
         cursor: pointer;
         position: relative;
         overflow: hidden;
+        margin: 10px;
         border-radius: 50%;
         width: 200px;
         height: 200px;
+        transition: transform 0.3s ease;
+    }
+
+    .inner-pic-text:hover {
+        transform: scale(1.1);
     }
 
     .inner-pic-text img {
-        user-select: none; 
         height: 100%;
         width: 100%;
     }
@@ -231,10 +203,7 @@
     .popup-main-container {
         display: flex;
         flex-direction: column;
-        width: max-content;
-        /* align-items: center; */
-        /* border: 1px solid; */
-        margin: 0 auto 10px auto;
+        margin: 20px auto;
         width: 90%;
         max-width: 900px;
         animation: slideDown 0.25s ease-in-out;
@@ -257,28 +226,18 @@
     .pic-container {
         display: flex;
         align-items: center;
-        /* border: 1px solid; */
-        height: max-content;
     }
     
     .featured-picture {
         cursor: pointer;
         width: 450px;
-        /* flex: 1; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #000000;
-        height: 100%;
         margin-right: 10px;
     }
     
     .grid {
-        /* flex: 2; */
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
-        height: auto;
         width: 100%;
         box-sizing: border-box;
     }
@@ -291,6 +250,31 @@
         object-fit: cover;
     }
 
+    .modal {
+        display: none;
+    }
+
+    .modal.open {
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0px;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(160, 160, 160, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .selected-image {
+        cursor: pointer;
+        user-select: none;
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+
     @keyframes fadeOut {
         from { opacity: 1; }
         to { opacity: 0.15; }
@@ -302,37 +286,20 @@
             opacity: 0;
         }
         to {
-            max-height: max-content; /* Adjust based on content size */
+            max-height: max-content;
             opacity: 1;
         }
     }
 
 
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 733px) {
 
         .pic-container {
             flex-direction: column;
         }
 
-        .popup-main-container {
-            /* display: flex; */
-            /* border: 1px solid; */
-            flex-direction: column;
-            align-items: center;
-            height: max-content;
-        }
-
         .grid {
-            /* border: 1px solid; */
-            /* height: 100px; */
             margin-top: 10px;
-            /* padding-left: 0px; */
-            /* width: 100%; */
-        }
-
-        .details {
-            /* border: 1px solid; */
-            /* transform: translateX(15px); */
         }
 
         .featured-picture {
@@ -340,7 +307,7 @@
             width: 100%;
         }
     }
-    
+
 </style>
     
     
