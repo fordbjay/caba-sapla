@@ -158,7 +158,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin: 0 auto;
+        margin: 0 auto 20px auto;
         width: 90%;
         max-width: 1024px;
     }

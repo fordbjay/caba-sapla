@@ -5,7 +5,7 @@
     <div style="height: 100%; width: 100%; position: relative;">
         <div class="footer">
             <div style="display: flex; align-items: end;">
-                <img style="width: 150px;" src="/cabasapla-logo-white.png" alt="">
+                <img style="width: 100px;" src="/cabasapla-logo-white.png" alt="cabasapla-logo-white.png">
                 <h3 style="transform: translateY(-15px)">&copy; {{new Date().getFullYear()}}</h3>
             </div>
             <a href="https://wa.me/qr/JPECI3TMBSQMJ1" target="_blank"> 
@@ -48,7 +48,6 @@ export default {
 
 .loop-video {
     width: 100%;
-    /* height: 100vh; */
     z-index: -1000;
     display: block;
 }
@@ -74,22 +73,25 @@ a img {
     border-radius: 10px;
     padding: 10px;
     background-color: rgb(250, 247, 243);
+    box-sizing: border-box;
+
+
 }
 
 @media screen and (max-width: 675px) {
-    a img {
-    width: 200px;
+  a img {
+    width: 175px;
     border-radius: 15px;
-    padding: 0px;
+    padding: 0;
+    margin-top: 10px;
     background-color: none;
-}
+  }
 
-    .footer {
-        flex-direction: column;
-        align-items: start;
-        padding: 10px
-    };
-
+  .footer {
+    flex-direction: column;
+    align-items: start;
+    padding: 10px
+  }
 }
 
 </style>
