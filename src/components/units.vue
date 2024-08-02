@@ -331,7 +331,8 @@
         }
 
         .details {
-            transform: translateX(15px);
+            /* border: 1px solid; */
+            /* transform: translateX(15px); */
         }
 
         .featured-picture {

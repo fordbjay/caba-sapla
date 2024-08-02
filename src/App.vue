@@ -1,8 +1,5 @@
 <template>
 
-  
-  <!-- <navBar/> -->
-
   <router-view />
 
 </template>
@@ -21,6 +18,11 @@ export default {
 * {
   margin: 0;
   padding:0;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 @font-face {

@@ -2,17 +2,16 @@
     
     <div class="main-container">
     
-        <div class="header-wrapper">
-            <img id="logo" src="/cabasapla-logo-white.png" alt="logo">
-            <!-- <img src="/wa-contact-qrcode.png" alt="exterior-2"> -->
-            <a href="https://wa.me/qr/JPECI3TMBSQMJ1" target="_blank"> 
-                <img class="qr-code" :src="imageSrc" alt="">
-            </a>
-            <!-- <a class="action-btn" href="https://wa.me/qr/JPECI3TMBSQMJ1" target="_blank">Contact Us Today!</a> -->
-        </div>
-    
-        <p class="tag-line-container">Your Next Home <br> in the Riviera Maya</p>  
-        
+      <div class="inner-wrapper">
+          <div class="logo-qr">
+              <img id="logo" src="/cabasapla-logo-white.png" alt="logo">
+              <a href="https://wa.me/qr/JPECI3TMBSQMJ1" target="_blank"> 
+                  <img class="qr-code" :src="imageSrc" alt="">
+              </a>
+          </div>
+      
+          <p class="tag-line">Your Next Home <br> in the Riviera Maya</p>  
+      </div>  
     </div>
         
 </template>
@@ -51,16 +50,25 @@ export default {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
 
-    .header-wrapper {
+    .inner-wrapper {
+      margin: 0 auto;
+      padding: 30px 0;
+      width: 90%;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      box-sizing: border-box;
+      
+    }
+
+    .logo-qr {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 50px;
     }
 
     #logo {
@@ -82,14 +90,12 @@ export default {
         letter-spacing: 1px;
     }
 
-    .tag-line-container {
+    .tag-line {
         color: white;
         font-size: 60px;
         font-family: 'beach-party';
         text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
-        padding: 50px;
         letter-spacing: 2px;
-        font-weight: 100;
         text-align: right;
     }
 
