@@ -1,18 +1,18 @@
 <template>
     
-    <div class="main-container">
-    
-      <div class="inner-wrapper">
-          <div class="logo-qr">
-              <img id="logo" src="/cabasapla-logo-white.png" alt="logo">
-              <a href="https://wa.me/qr/JPECI3TMBSQMJ1" target="_blank"> 
-                  <img class="qr-code" :src="imageSrc" alt="">
-              </a>
-          </div>
-      
-          <p class="tag-line">Your Next Home <br> in the Riviera Maya</p>  
-      </div>  
-    </div>
+  <div class="bg-container">
+  
+    <div class="inner-wrapper">
+        <div class="logo-qr">
+            <img id="logo" src="/cabasapla-logo-white.png" alt="logo">
+            <a href="https://wa.me/qr/JPECI3TMBSQMJ1" target="_blank"> 
+                <img class="qr-contact-btn" :src="imageSrc" :alt="imageSrc">
+            </a>
+        </div>
+        <p class="tag-line">Your Next Home <br> in the Riviera Maya</p>
+    </div>  
+  
+  </div>
         
 </template>
     
@@ -25,7 +25,7 @@ export default {
   },
   computed: {
     imageSrc() {
-      return this.windowWidth <= 675 ? '/WhatsAppButtonGreenLarge.png' : '/wa-contact-qrcode.png';
+      return this.windowWidth <= 650 ? '/WhatsAppButtonGreenLarge.png' : '/wa-contact-qrcode.png';
     }
   },
   mounted() {
@@ -44,7 +44,7 @@ export default {
 
 <style scoped>
 
-    .main-container {
+    .bg-container {
         background-image: url(/exterior.jpg);
         height: 100vh;
         background-position: center;
@@ -56,13 +56,12 @@ export default {
       margin: 0 auto;
       padding: 30px 0;
       width: 90%;
-      max-width: 900px;
+      max-width: 1024px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
       box-sizing: border-box;
-      
     }
 
     .logo-qr {
@@ -75,19 +74,11 @@ export default {
         width: 300px;
     }
 
-    .action-btn {
-        cursor: pointer;
-        text-decoration: none;
-        padding: 20px 40px;
-        border-radius: 50px;
-        border: none;
-        /* border: 5px solid green; */
-        background-color: green;
-        color: white;
-        font-family: 'beach-party';
-        font-size: 20px;
-        font-weight: 100;
-        letter-spacing: 1px;
+    .qr-contact-btn {
+        width: 150px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: rgb(250, 247, 243);
     }
 
     .tag-line {
@@ -99,31 +90,33 @@ export default {
         text-align: right;
     }
 
-    .qr-code {
-        width: 150px;
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgb(250, 247, 243);
+
+    /* tablets */
+    @media screen and (max-width: 650px) {
+
+      .logo-qr {
+        flex-direction: column;
+      }
+
+      .qr-contact-btn {
+        margin-top: 40px;
+        padding: 0px;
+        width: 200px;
+        border-radius: 15px;
+      }
+
+      .tag-line {
+        text-align: center;
+        font-size: 40px;
+      }
+
     }
 
-    @media screen and (max-width: 675px) {
-        .header-wrapper {
-            flex-direction: column;
-            justify-content: space-between;
-            height: 70%;
-        }
+    @media screen and (max-height: 400px) {
+      .tag-line {
+        font-size: 40px;
+      }
 
-        .tag-line-container {
-            font-size: 40px;
-            text-align: center;
-        }
-
-        .qr-code {
-            width: 250px;
-            border-radius: 15px;
-            background-color: none;
-            padding: 0;
-        }
     }
 
 </style>
