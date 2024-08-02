@@ -113,8 +113,12 @@ export default {
     }
 
     @media screen and (max-height: 400px) {
+
+      #logo {
+        width: 200px;
+      }
       .tag-line {
-        font-size: 40px;
+        font-size: 30px;
       }
 
     }
