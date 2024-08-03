@@ -1,0 +1,14 @@
+"filename", "language", "JavaScript", "vue", "comment", "blank", "total"
+"/Users/brianford/Documents/caba-sapla/website/caba-sapla/src/App.vue", "vue", 0, 20, 0, 11, 31
+"/Users/brianford/Documents/caba-sapla/website/caba-sapla/src/components/drone.vue", "vue", 0, 47, 0, 13, 60
+"/Users/brianford/Documents/caba-sapla/website/caba-sapla/src/components/exterior.vue", "vue", 0, 52, 1, 12, 65
+"/Users/brianford/Documents/caba-sapla/website/caba-sapla/src/components/google-map.vue", "vue", 0, 15, 0, 6, 21
+"/Users/brianford/Documents/caba-sapla/website/caba-sapla/src/components/info.vue", "vue", 0, 66, 0, 15, 81
+"/Users/brianford/Documents/caba-sapla/website/caba-sapla/src/components/opening.vue", "vue", 0, 76, 0, 22, 98
+"/Users/brianford/Documents/caba-sapla/website/caba-sapla/src/components/props/modal.vue", "vue", 0, 65, 0, 11, 76
+"/Users/brianford/Documents/caba-sapla/website/caba-sapla/src/components/props/qr-wa-link.vue", "vue", 0, 66, 0, 12, 78
+"/Users/brianford/Documents/caba-sapla/website/caba-sapla/src/components/units.vue", "vue", 0, 243, 0, 44, 287
+"/Users/brianford/Documents/caba-sapla/website/caba-sapla/src/main.js", "JavaScript", 4, 0, 0, 2, 6
+"/Users/brianford/Documents/caba-sapla/website/caba-sapla/src/router.js", "JavaScript", 16, 0, 0, 3, 19
+"/Users/brianford/Documents/caba-sapla/website/caba-sapla/src/views/Home.vue", "vue", 0, 21, 0, 14, 35
+"Total", "-", 20, 671, 1, 165, 857

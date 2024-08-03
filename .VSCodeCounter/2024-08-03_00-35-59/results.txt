@@ -1,0 +1,42 @@
+Date : 2024-08-03 00:35:59
+Directory : /Users/brianford/Documents/caba-sapla/website/caba-sapla/src
+Total : 12 files,  691 codes, 1 comments, 165 blanks, all 857 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| vue        |         10 |        671 |          1 |        160 |        832 |
+| JavaScript |          2 |         20 |          0 |          5 |         25 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                         | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                            |         12 |        691 |          1 |        165 |        857 |
+| . (Files)                                                                                    |          3 |         40 |          0 |         16 |         56 |
+| components                                                                                   |          8 |        630 |          1 |        135 |        766 |
+| components (Files)                                                                           |          6 |        499 |          1 |        112 |        612 |
+| components/props                                                                             |          2 |        131 |          0 |         23 |        154 |
+| views                                                                                        |          1 |         21 |          0 |         14 |         35 |
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                     | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/brianford/Documents/caba-sapla/website/caba-sapla/src/App.vue                         | vue        |         20 |          0 |         11 |         31 |
+| /Users/brianford/Documents/caba-sapla/website/caba-sapla/src/components/drone.vue            | vue        |         47 |          0 |         13 |         60 |
+| /Users/brianford/Documents/caba-sapla/website/caba-sapla/src/components/exterior.vue         | vue        |         52 |          1 |         12 |         65 |
+| /Users/brianford/Documents/caba-sapla/website/caba-sapla/src/components/google-map.vue       | vue        |         15 |          0 |          6 |         21 |
+| /Users/brianford/Documents/caba-sapla/website/caba-sapla/src/components/info.vue             | vue        |         66 |          0 |         15 |         81 |
+| /Users/brianford/Documents/caba-sapla/website/caba-sapla/src/components/opening.vue          | vue        |         76 |          0 |         22 |         98 |
+| /Users/brianford/Documents/caba-sapla/website/caba-sapla/src/components/props/modal.vue      | vue        |         65 |          0 |         11 |         76 |
+| /Users/brianford/Documents/caba-sapla/website/caba-sapla/src/components/props/qr-wa-link.vue | vue        |         66 |          0 |         12 |         78 |
+| /Users/brianford/Documents/caba-sapla/website/caba-sapla/src/components/units.vue            | vue        |        243 |          0 |         44 |        287 |
+| /Users/brianford/Documents/caba-sapla/website/caba-sapla/src/main.js                         | JavaScript |          4 |          0 |          2 |          6 |
+| /Users/brianford/Documents/caba-sapla/website/caba-sapla/src/router.js                       | JavaScript |         16 |          0 |          3 |         19 |
+| /Users/brianford/Documents/caba-sapla/website/caba-sapla/src/views/Home.vue                  | vue        |         21 |          0 |         14 |         35 |
+| Total                                                                                        |            |        691 |          1 |        165 |        857 |
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
