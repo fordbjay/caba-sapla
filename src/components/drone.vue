@@ -6,13 +6,12 @@
         <div class="footer">
             <div style="display: flex; align-items: end;">
                 <img style="width: 100px;" src="/cabasapla-logo-white.png" alt="cabasapla-logo-white.png">
-                <h3 style="transform: translateY(-15px)">&copy; {{new Date().getFullYear()}}</h3>
+                <h3>&copy; {{new Date().getFullYear()}}</h3>
             </div>
             <a href="https://wa.me/qr/JPECI3TMBSQMJ1" target="_blank"> 
                 <img :src="imageSrc" alt="wa-contact-qrcode.png">
             </a>
         </div>
-        <!-- <video class="loop-video" playsinline="playsinline" data-wf-ignore autoplay loop muted src="/cabasapla-drone-1000kbps.mp4"></video> -->
     </div>
 
 
