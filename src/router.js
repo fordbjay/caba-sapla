@@ -9,14 +9,6 @@ const routes = [
             title: "Home"
           }
     },
-    { 
-        path: '/about',
-        name: 'about',
-        component: () => import('./views/About.vue'),
-        meta: {
-            title: "About"
-          }
-    },
 ]
 
 const router = createRouter({

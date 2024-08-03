@@ -25,6 +25,7 @@
                     :key="index" :src="pic"
                     :alt="'Picture ' + (index + 1)"
                     @click="this.imgClicked = index"
+                    :class="{'selected-image': imgClicked === index}"
                 >
                     
             </div>
@@ -42,7 +43,7 @@
         :openCondition="modalOpen"
         @close="this.modalOpen = false"
     />
-    
+
 </template>
     
 <script>
@@ -107,8 +108,8 @@
                         name: 'B',
                         price: '13,000',
                         pics: [
-                            "/units/b/IMG_4258.jpg",
                             "/units/b/IMG_4237.jpg",
+                            "/units/b/IMG_4258.jpg",
                             "/units/b/IMG_4173.jpg",
                             "/units/b/IMG_4129.jpg",
                             "/units/b/IMG_4283.jpg",
@@ -243,9 +244,14 @@
         object-fit: cover;
     }
 
+    .selected-image {
+        opacity: 0.25;
+        animation: fadeOut .25s ease-in-out;
+    }
+
     @keyframes fadeOut {
         from { opacity: 1; }
-        to { opacity: 0.15; }
+        to { opacity: 0.25; }
     }
 
     @keyframes slideDown {
@@ -258,7 +264,6 @@
             opacity: 1;
         }
     }
-
 
     @media screen and (max-width: 733px) {
 
