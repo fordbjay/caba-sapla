@@ -62,6 +62,7 @@ export default {
       justify-content: space-between;
       height: 100%;
       box-sizing: border-box;
+      /* animation: fadeIn 1s ease-in-out; */
     }
 
     .logo-qr {
@@ -90,8 +91,11 @@ export default {
         text-align: right;
     }
 
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
 
-    /* tablets */
     @media screen and (max-width: 650px) {
 
       .logo-qr {
