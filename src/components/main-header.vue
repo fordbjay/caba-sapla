@@ -100,10 +100,11 @@ export default {
 
       .logo-qr {
         flex-direction: column;
+        height: 100%;
       }
 
       .qr-contact-btn {
-        margin-top: 40px;
+        margin-bottom: 20px;
         padding: 0px;
         width: 200px;
         border-radius: 15px;
