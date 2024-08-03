@@ -1,15 +1,23 @@
 <template>
+
     <div
         v-if="modalOpen"
         :class="{ modal: true, open: modalOpen }"
         @click="closePic"
     >
-        <img draggable="false" class="selected-image" :src="pic" :alt="pic">
+        <img
+            class="selected-image"
+            draggable="false"
+            :src="pic" :alt="pic"
+        >
     </div>
+
 </template>
 
 <script>
+
 export default {
+
     props: {
         openCondition: {
             type: Boolean,
@@ -36,9 +44,11 @@ export default {
         },
     },
 }
+
 </script>
 
 <style scoped>
+
 .modal {
     display: none;
 }
@@ -62,4 +72,5 @@ export default {
     max-width: 100%;
     max-height: 80vh;
 }
+
 </style>

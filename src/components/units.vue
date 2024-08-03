@@ -89,17 +89,17 @@
                         name: 'A',
                         price: '11,000',
                         pics: [
-                        "/units-pics/a/IMG_4380.jpg",
-                        "/units-pics/a/IMG_4368.jpg",
-                        "/units-pics/a/IMG_4120.jpg",
-                        "/units-pics/a/IMG_4340.jpg",
-                        "/units-pics/a/IMG_4348.jpg",
-                        "/units-pics/a/IMG_4394.jpg",
-                        "/units-pics/a/IMG_4410.jpg",
-                        "/units-pics/a/IMG_4475.jpg",
-                        "/units-pics/a/IMG_4101.jpg"
-                        //  "/units-pics/a/IMG_4416.jpg",
-                        // "/units-pics/a/IMG_4112.jpg",
+                        "/units/a/IMG_4380.jpg",
+                        "/units/a/IMG_4368.jpg",
+                        "/units/a/IMG_4120.jpg",
+                        "/units/a/IMG_4340.jpg",
+                        "/units/a/IMG_4348.jpg",
+                        "/units/a/IMG_4394.jpg",
+                        "/units/a/IMG_4410.jpg",
+                        "/units/a/IMG_4475.jpg",
+                        "/units/a/IMG_4101.jpg"
+                        //  "/units/a/IMG_4416.jpg",
+                        // "/units/a/IMG_4112.jpg",
                         ],
 
                     },
@@ -107,17 +107,17 @@
                         name: 'B',
                         price: '13,000',
                         pics: [
-                            "/units-pics/b/IMG_4237.jpg",
-                            "/units-pics/b/IMG_4258.jpg",
-                            "/units-pics/b/IMG_4173.jpg",
-                            "/units-pics/b/IMG_4129.jpg",
-                            // "/units-pics/b/IMG_4094.jpg",
-                            "/units-pics/b/IMG_4283.jpg",
-                            "/units-pics/b/IMG_4289.jpg",
-                            "/units-pics/b/IMG_4296.jpg",
-                            //   "/units-pics/b/IMG_4296.jpg",
-                            "/units-pics/b/IMG_4311.jpg",
-                            "/units-pics/b/IMG_4089.jpg",
+                            "/units/b/IMG_4258.jpg",
+                            "/units/b/IMG_4237.jpg",
+                            "/units/b/IMG_4173.jpg",
+                            "/units/b/IMG_4129.jpg",
+                            "/units/b/IMG_4283.jpg",
+                            "/units/b/IMG_4289.jpg",
+                            "/units/b/IMG_4296.jpg",
+                            "/units/b/IMG_4311.jpg",
+                            "/units/b/IMG_4089.jpg",
+                            //   "/units/b/IMG_4296.jpg",
+                            // "/units/b/IMG_4094.jpg",
                         ],
 
                     },
@@ -125,17 +125,17 @@
                         name: 'C',
                         price: '12,000',
                         pics: [
-                            "/units-pics/c/IMG_4323.jpg",
-                            "/units-pics/c/IMG_4230.jpg",
-                            "/units-pics/c/IMG_4220.jpg",
-                            "/units-pics/c/IMG_4197.jpg",
-                            "/units-pics/c/IMG_4132.jpg",
-                            // "/units-pics/c/IMG_4077.jpg",
-                            // "/units-pics/c/IMG_4204.jpg",
-                            "/units-pics/c/IMG_4216.jpg",
-                            "/units-pics/c/IMG_4222.jpg",
-                            "/units-pics/c/IMG_4235.jpg",
-                            "/units-pics/c/IMG_4097.jpg",
+                            "/units/c/IMG_4323.jpg",
+                            "/units/c/IMG_4230.jpg",
+                            "/units/c/IMG_4220.jpg",
+                            "/units/c/IMG_4197.jpg",
+                            "/units/c/IMG_4132.jpg",
+                            "/units/c/IMG_4216.jpg",
+                            "/units/c/IMG_4222.jpg",
+                            "/units/c/IMG_4235.jpg",
+                            "/units/c/IMG_4097.jpg",
+                            // "/units/c/IMG_4077.jpg",
+                            // "/units/c/IMG_4204.jpg",
                         ],
                     },
                 ]
@@ -148,10 +148,6 @@
     
     
 <style scoped>
-
-body.modal-open {
-    overflow: hidden;
-}
 
     .units-btns-container {
         display: flex;

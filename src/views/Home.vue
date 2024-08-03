@@ -1,32 +1,30 @@
 <template>
 
-    <mainHeader/>
+    <opening/>
 
     <info/>
 
     <units/>
 
-    <neighborhood/>
+    <googleMap/>
 
     <exterior/>
 
     <drone/>
 
-
-
 </template>
 
 <script>
-import mainHeader from '../components/main-header.vue'
-import drone from '../components/drone.vue'
+import opening from '../components/opening.vue'
 import info from '../components/info.vue'
 import units from '../components/units.vue'
-import neighborhood from '../components/neighborhood.vue'
+import googleMap from '../components/google-map.vue'
 import exterior from '../components/exterior.vue'
+import drone from '../components/drone.vue'
 
   export default {
 
-    components: { mainHeader, drone, info, units, neighborhood, exterior }
+    components: { opening, info, units, googleMap, exterior, drone }
 
   }
   

@@ -15,45 +15,46 @@
 </template>
 
 <script>
-import qrWaLink from './props/qr-wa-link.vue'
+  import qrWaLink from './props/qr-wa-link.vue'
 
-export default {
-  components: { qrWaLink },
-};
+  export default {
+    components: { qrWaLink },
+  };
+
 </script>
 
 <style scoped>
 
-.loop-video {
-    width: 100%;
-    z-index: -1000;
-    display: block;
-}
-
-.footer {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    font-family: 'beach-party';
-    letter-spacing: 1px;
-    font-weight: 100;
-    align-items: end;
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-@media screen and (max-width: 675px) {
+  .loop-video {
+      width: 100%;
+      z-index: -1000;
+      display: block;
+  }
 
   .footer {
-    flex-direction: column;
-    align-items: start;
-    padding: 10px
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      font-family: 'beach-party';
+      letter-spacing: 1px;
+      font-weight: 100;
+      align-items: end;
+      bottom: 0;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
   }
-  
-}
+
+  @media screen and (max-width: 675px) {
+
+    .footer {
+      flex-direction: column;
+      align-items: start;
+      padding: 10px
+    }
+    
+  }
 
 </style>

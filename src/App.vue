@@ -7,14 +7,10 @@
 <script>
 import {RouterView, RouterLink} from 'vue-router'
 
-export default {
-  components: {
-  }
-
-}
 </script>
 
 <style>
+
 * {
   margin: 0;
   padding:0;

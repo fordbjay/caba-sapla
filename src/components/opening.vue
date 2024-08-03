@@ -15,11 +15,12 @@
 </template>
     
 <script>
-import qrWaLink from './props/qr-wa-link.vue'
+  import qrWaLink from './props/qr-wa-link.vue'
 
-export default {
-  components: { qrWaLink },
-};
+  export default {
+    components: { qrWaLink },
+  };
+
 </script>
 
 <style scoped>

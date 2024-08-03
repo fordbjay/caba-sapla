@@ -8,36 +8,36 @@
 
 <script>
 
-export default {
-    props: {
-        desiredWidth: {
-            type: Number,
-            required: true,
+    export default {
+        props: {
+            desiredWidth: {
+                type: Number,
+                required: true,
+            },
         },
-    },
-    data() {
-        return {
-            windowWidth: window.innerWidth
-
-        };
-    },
-    computed: {
-        imageSrc() {
-            return this.windowWidth <= this.desiredWidth ? '/contact/WhatsAppButtonGreenLarge.png' : '/contact/wa-contact-qrcode.png';
-        }
-    },
-    mounted() {
-        window.addEventListener('resize', this.handleResize);
-    },
-    beforeDestroy() {
-        window.removeEventListener('resize', this.handleResize);
-    },
-    methods: {
-        handleResize() {
-            this.windowWidth = window.innerWidth;
+        data() {
+            return {
+                windowWidth: window.innerWidth
+            };
+        },
+        computed: {
+            imageSrc() {
+                return this.windowWidth <= this.desiredWidth ? '/contact/WhatsAppButtonGreenLarge.png' : '/contact/wa-contact-qrcode.png';
+            }
+        },
+        mounted() {
+            window.addEventListener('resize', this.handleResize);
+        },
+        beforeDestroy() {
+            window.removeEventListener('resize', this.handleResize);
+        },
+        methods: {
+            handleResize() {
+                this.windowWidth = window.innerWidth;
+            }
         }
     }
-}
+
 </script>
 
 <style scoped>
