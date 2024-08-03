@@ -23,7 +23,7 @@ export default {
     },
     computed: {
         imageSrc() {
-            return this.windowWidth <= this.desiredWidth ? '/WhatsAppButtonGreenLarge.png' : '/wa-contact-qrcode.png';
+            return this.windowWidth <= this.desiredWidth ? '/contact/WhatsAppButtonGreenLarge.png' : '/contact/wa-contact-qrcode.png';
         }
     },
     mounted() {
@@ -51,7 +51,7 @@ export default {
     }
 
     .qr-contact-btn {
-        width: 150px;
+        width: 175px;
         border-radius: 10px;
         padding: 10px;
         background-color: rgb(250, 247, 243);

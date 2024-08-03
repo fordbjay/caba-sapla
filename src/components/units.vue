@@ -198,7 +198,6 @@
         font-weight: 100;
         font-family: 'beach-party'
     }
-
     
     .popup-main-container {
         display: flex;
@@ -221,7 +220,6 @@
         font-weight: 100;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    
     
     .pic-container {
         display: flex;

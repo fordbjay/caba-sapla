@@ -1,31 +1,27 @@
 <template>
-
-    <div class="grid-container" >
-        <div class="grid-el" v-for="image, index in images" @click="openPic(index)">
+    <div class="grid-container">
+        <div class="grid-el" v-for="(image, index) in images" :key="index" @click="openPic(index)">
             <img :src="image" :alt="image">
         </div>
     </div>
 
-
     <!-- MODAL -->
-    <div
-        v-if="picOpen"
-        :class="{ modal: true, open: this.picOpen }"
-        @click="this.picOpen = false"
-    >
-        <img draggable="false" class="selected-image" :src="this.images[this.imgClicked]" :alt="this.images[this.imgClicked]">
-    </div>
+    <modal :pic="images[imgClicked]" :openCondition="picOpen" @close="closePic"/>
 
 </template>
 
 <script>
+import modal from './props/modal.vue'
 
 export default {
+    components: { modal },
     methods: {
         openPic(index) {
-            this.imgClicked = index
-            this.picOpen = true
-            console.log(this.imgClicked)
+            this.imgClicked = index;
+            this.picOpen = true;
+        },
+        closePic() {
+            this.picOpen = false;
         }
     },
     data() {
@@ -63,25 +59,5 @@ export default {
 .grid-el img:hover {
     transform: scale(1.2)
 }
-
-.modal.open {
-        z-index: 999;
-        position: fixed;
-        top: 0;
-        left: 0px;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(160, 160, 160, 0.5);
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .selected-image {
-        cursor: pointer;
-        user-select: none;
-        max-width: 100%;
-        max-height: 80vh;
-    }
 
 </style>
