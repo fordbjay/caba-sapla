@@ -36,32 +36,27 @@
 
     </div>
 
-
-
-    <!-- MODAL -->
-    <div
-        v-if="unitDetailsOpen"
-        :class="{ modal: true, open: modalOpen }"
-        @click="closePic()"
-    >
-        <img draggable="false" class="selected-image" :src="this.units[this.unitClicked].pics[this.imgClicked]" alt="selected-image">
-    </div>
+    <modal
+        v-if="unitClicked !== null && imgClicked !== null"
+        :pic="this.units[this.unitClicked].pics[this.imgClicked]"
+        :openCondition="modalOpen"
+        @close="this.modalOpen = false"
+    />
     
 </template>
     
 <script>
-    
+    import modal from './props/modal.vue'
     
     export default {
-
+        
+        components: { modal },
+        
         methods: {
             expandPic() {
-                if(window.innerWidth > 700) {
+                if(window.innerWidth > 700 && window.innerHeight > 400) {
                     this.modalOpen = true;
                 }
-            },
-            closePic() {
-                this.modalOpen = false
             },
             showUnit(index) {
                 this.imgClicked = 0;
@@ -153,6 +148,10 @@
     
     
 <style scoped>
+
+body.modal-open {
+    overflow: hidden;
+}
 
     .units-btns-container {
         display: flex;
@@ -247,31 +246,6 @@
         height: 100px;
         object-fit: cover;
     }
-
-    .modal {
-        display: none;
-    }
-
-    .modal.open {
-        z-index: 999;
-        position: fixed;
-        top: 0;
-        left: 0px;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(160, 160, 160, 0.5);
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .selected-image {
-        cursor: pointer;
-        user-select: none;
-        max-width: 100%;
-        max-height: 80vh;
-    }
-
 
     @keyframes fadeOut {
         from { opacity: 1; }

@@ -1,12 +1,16 @@
 <template>
     <div class="grid-container">
-        <div class="grid-el" v-for="(image, index) in images" :key="index" @click="openPic(index)">
+        <div class="grid-el" v-for="(image, index) in images" :key="index" @click="expandPic(index)">
             <img :src="image" :alt="image">
         </div>
     </div>
 
     <!-- MODAL -->
-    <modal :pic="images[imgClicked]" :openCondition="picOpen" @close="closePic"/>
+    <modal
+        :pic="images[imgClicked]"
+        :openCondition="modalOpen"
+        @close="this.modalOpen = false;"
+    />
 
 </template>
 
@@ -16,17 +20,14 @@ import modal from './props/modal.vue'
 export default {
     components: { modal },
     methods: {
-        openPic(index) {
+        expandPic(index) {
             this.imgClicked = index;
-            this.picOpen = true;
+            this.modalOpen = true;
         },
-        closePic() {
-            this.picOpen = false;
-        }
     },
     data() {
         return {
-            picOpen: false,
+            modalOpen: false,
             imgClicked: null,
             images: [
                 "/exterior/IMG_3796.jpg",
