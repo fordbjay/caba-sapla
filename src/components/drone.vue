@@ -8,38 +8,17 @@
                 <img style="width: 100px;" src="/cabasapla-logo-white.png" alt="cabasapla-logo-white.png">
                 <h3>&copy; {{new Date().getFullYear()}}</h3>
             </div>
-            <a href="https://wa.me/qr/JPECI3TMBSQMJ1" target="_blank"> 
-                <img :src="imageSrc" alt="wa-contact-qrcode.png">
-            </a>
+            <qrWaLink :desiredWidth="675"/>
         </div>
     </div>
-
-
+    
 </template>
 
 <script>
+import qrWaLink from './props/qr-wa-link.vue'
+
 export default {
-  data() {
-    return {
-      windowWidth: window.innerWidth
-    };
-  },
-  computed: {
-    imageSrc() {
-      return this.windowWidth <= 675 ? '/WhatsAppButtonGreenLarge.png' : '/wa-contact-qrcode.png';
-    }
-  },
-  mounted() {
-    window.addEventListener('resize', this.handleResize);
-  },
-  beforeDestroy() {
-    window.removeEventListener('resize', this.handleResize);
-  },
-  methods: {
-    handleResize() {
-      this.windowWidth = window.innerWidth;
-    }
-  }
+  components: { qrWaLink },
 };
 </script>
 
@@ -67,29 +46,14 @@ export default {
     box-sizing: border-box;
 }
 
-a img {
-    width: 200px;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: rgb(250, 247, 243);
-    box-sizing: border-box;
-}
-
 @media screen and (max-width: 675px) {
-  a img {
-    width: 175px;
-    border-radius: 15px;
-    padding: 0;
-    margin-top: 10px;
-    background-color: none;
-  }
 
   .footer {
     flex-direction: column;
     align-items: start;
     padding: 10px
   }
+  
 }
 
 </style>
-
