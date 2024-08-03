@@ -45,7 +45,7 @@ export default {
 <style scoped>
 
     .bg-container {
-        background-image: url(/exterior.jpg);
+        background-image: url(/exterior/exterior.jpg);
         height: 100vh;
         background-position: center;
         background-repeat: no-repeat;

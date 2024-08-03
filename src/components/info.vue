@@ -22,7 +22,7 @@
             <li>Air Conditioner</li>
             <li>Ceiling Fan</li>
         </ul>
-        <img style="border-radius: 50px;" src="/exterior-2.jpg" alt="exterior-2.jpg">
+        <img style="border-radius: 50px;" src="/exterior/exterior-2.jpg" alt="exterior-2.jpg">
    
     </div>
 

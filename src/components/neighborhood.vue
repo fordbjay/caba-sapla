@@ -18,4 +18,8 @@
 
 <style scoped>
 
+iframe {
+    display: block;
+}
+
 </style>
