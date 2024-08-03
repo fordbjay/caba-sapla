@@ -5,9 +5,7 @@
     <div class="inner-wrapper">
         <div class="logo-qr">
             <img id="logo" src="/cabasapla-logo-white.png" alt="logo">
-            <a href="https://wa.me/qr/JPECI3TMBSQMJ1" target="_blank"> 
-                <img class="qr-contact-btn" :src="imageSrc" :alt="imageSrc">
-            </a>
+            <qrWaLink :desiredWidth="675"/>
         </div>
         <p class="tag-line">Your Next Home <br> in the Riviera Maya</p>
     </div>  
@@ -17,28 +15,10 @@
 </template>
     
 <script>
+import qrWaLink from './props/qr-wa-link.vue'
+
 export default {
-  data() {
-    return {
-      windowWidth: window.innerWidth
-    };
-  },
-  computed: {
-    imageSrc() {
-      return this.windowWidth <= 650 ? '/WhatsAppButtonGreenLarge.png' : '/wa-contact-qrcode.png';
-    }
-  },
-  mounted() {
-    window.addEventListener('resize', this.handleResize);
-  },
-  beforeDestroy() {
-    window.removeEventListener('resize', this.handleResize);
-  },
-  methods: {
-    handleResize() {
-      this.windowWidth = window.innerWidth;
-    }
-  }
+  components: { qrWaLink },
 };
 </script>
 
@@ -75,13 +55,6 @@ export default {
         width: 300px;
     }
 
-    .qr-contact-btn {
-        width: 150px;
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgb(250, 247, 243);
-    }
-
     .tag-line {
         color: white;
         font-size: 60px;
@@ -96,18 +69,11 @@ export default {
         to { opacity: 1; }
     }
 
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 675px) {
 
       .logo-qr {
         flex-direction: column;
         height: 100%;
-      }
-
-      .qr-contact-btn {
-        margin-bottom: 20px;
-        padding: 0px;
-        width: 200px;
-        border-radius: 15px;
       }
 
       .tag-line {

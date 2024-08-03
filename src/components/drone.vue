@@ -73,8 +73,6 @@ a img {
     padding: 10px;
     background-color: rgb(250, 247, 243);
     box-sizing: border-box;
-
-
 }
 
 @media screen and (max-width: 675px) {
