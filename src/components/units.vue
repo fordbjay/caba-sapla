@@ -90,17 +90,15 @@
                         name: 'A',
                         price: '11,000',
                         pics: [
-                        "/units/a/IMG_4380.jpg",
-                        "/units/a/IMG_4368.jpg",
-                        "/units/a/IMG_4120.jpg",
-                        "/units/a/IMG_4340.jpg",
-                        "/units/a/IMG_4348.jpg",
-                        "/units/a/IMG_4394.jpg",
-                        "/units/a/IMG_4410.jpg",
-                        "/units/a/IMG_4475.jpg",
-                        "/units/a/IMG_4101.jpg"
-                        //  "/units/a/IMG_4416.jpg",
-                        // "/units/a/IMG_4112.jpg",
+                        "/units/a/IMG_4380.jpg", // FRONT TO BACK LEFT
+                        "/units/a/IMG_4348.jpg", // FRONT TO BACK STRAIGHT
+                        "/units/a/IMG_4368.jpg", // FRONT TO BACK RIGHT
+                        "/units/a/IMG_4394.jpg", // TELEVISION/COUCH
+                        "/units/a/IMG_4120.jpg", // EXTERIOR
+                        "/units/a/IMG_4410.jpg", // BATH/KITCHEN
+                        "/units/a/IMG_4340.jpg", // BACK TO FRONT STRAIGHT
+                        "/units/a/IMG_4475.jpg", // BACK TO FRONT RIGHT
+                        "/units/a/IMG_4101.jpg", // BATHROOM
                         ],
 
                     },
@@ -108,17 +106,15 @@
                         name: 'B',
                         price: '13,000',
                         pics: [
-                            "/units/b/IMG_4237.jpg",
-                            "/units/b/IMG_4258.jpg",
-                            "/units/b/IMG_4173.jpg",
-                            "/units/b/IMG_4129.jpg",
-                            "/units/b/IMG_4283.jpg",
-                            "/units/b/IMG_4289.jpg",
-                            "/units/b/IMG_4296.jpg",
-                            "/units/b/IMG_4311.jpg",
-                            "/units/b/IMG_4089.jpg",
-                            //   "/units/b/IMG_4296.jpg",
-                            // "/units/b/IMG_4094.jpg",
+                            "/units/b/IMG_4237.jpg", // BACK TO FRONT STRAIGHT
+                            "/units/b/IMG_4311.jpg", // BACK TO FRONT RIGHT
+                            "/units/b/IMG_4173.jpg", // BATH/KITCHEN
+                            "/units/b/IMG_4296.jpg", // TELEVISION/COUCH
+                            "/units/b/IMG_4129.jpg", // EXTERIOR
+                            "/units/b/IMG_4289.jpg", // FRONT TO BACK LEFT
+                            "/units/b/IMG_4258.jpg", // FRONT TO BACK STRAIGHT
+                            "/units/b/IMG_4283.jpg", // FRONT TO BACK RIGHT
+                            "/units/b/IMG_4089.jpg", // BATHROOM
                         ],
 
                     },
@@ -126,17 +122,15 @@
                         name: 'C',
                         price: '12,000',
                         pics: [
-                            "/units/c/IMG_4323.jpg",
-                            "/units/c/IMG_4230.jpg",
-                            "/units/c/IMG_4220.jpg",
-                            "/units/c/IMG_4197.jpg",
-                            "/units/c/IMG_4132.jpg",
-                            "/units/c/IMG_4216.jpg",
-                            "/units/c/IMG_4222.jpg",
-                            "/units/c/IMG_4235.jpg",
-                            "/units/c/IMG_4097.jpg",
-                            // "/units/c/IMG_4077.jpg",
-                            // "/units/c/IMG_4204.jpg",
+                            "/units/c/IMG_4323.jpg", // BACK TO FRONT RIGHT
+                            "/units/c/IMG_4220.jpg", // FRONT TO BACK STRAIGHT
+                            "/units/c/IMG_4230.jpg", // FRONT TO BACK RIGHT
+                            "/units/c/IMG_4235.jpg", // TELEVISION/COUCH
+                            "/units/c/IMG_4132.jpg", // EXTERIOR
+                            "/units/c/IMG_4197.jpg", // BATH/KITCHEN
+                            "/units/c/IMG_4216.jpg", // BACK TO FRONT STRAIGHT
+                            "/units/c/IMG_4222.jpg", // FRONT TO BACK LEFT
+                            "/units/c/IMG_4097.jpg", // BATHROOM
                         ],
                     },
                 ]

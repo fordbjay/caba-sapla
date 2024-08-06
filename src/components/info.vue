@@ -7,7 +7,7 @@
             and well appointed studios in the heart of town.
             <br>
             <br>
-            These studios are perfect for digital nomads,
+            These studios are perfect for digital nomads, expats,
             travellers and anyone who wants to feel instantly at
             home while experiencing all that Mexico has to offer.
             <br>
