@@ -7,7 +7,7 @@
             and well appointed studios in the heart of downtown.
             <br>
             <br>
-            Easy walking distance to all the main beaches, famous 
+            Easily walk to all the main beaches, famous 
             Quinta Avenida, local restaurants, major supermarkets
             and every amenity needed.
             <br>
