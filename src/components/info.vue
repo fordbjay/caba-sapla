@@ -4,7 +4,12 @@
         <p>
             <span style="font-family: 'beach-party'; font-size: 30px;">Enjoy the best</span>
             of Playa del Carmen, Mexico in our new, bright
-            and well appointed studios in the heart of town.
+            and well appointed studios in the heart of downtown.
+            <br>
+            <br>
+            Easy walking distance to all the main beaches, famous 
+            Quinta Avenida, local restaurants, major supermarkets
+            and every amenity needed.
             <br>
             <br>
             These studios are perfect for digital nomads, expats,
