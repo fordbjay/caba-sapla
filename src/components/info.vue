@@ -61,7 +61,7 @@
     }
 
     img {
-        width: 200px;
+        width: 250px;
     }
 
     @media screen and (max-width: 775px) {
