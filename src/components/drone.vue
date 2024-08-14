@@ -49,7 +49,6 @@
   }
 
   .press-kit {
-    margin: 10px 0;
     background-color: white;
     font-weight: 400;
     border: 1px solid white;
@@ -91,6 +90,10 @@
       flex-direction: column;
       align-items: start;
       padding: 10px
+    }
+
+    .press-kit {
+      margin: 10px 0;
     }
     
   }

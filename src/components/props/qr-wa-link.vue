@@ -60,7 +60,6 @@
     @media screen and (max-width: 675px) {
 
         .qr-contact-btn {
-            /* margin-bottom: 20px; */
             padding: 0px;
             width: 200px;
             border-radius: 15px;
@@ -75,7 +74,6 @@
             width: 175px;
             border-radius: 15px;
             padding: 0;
-            /* margin-top: 10px; */
             background-color: none;
         }
     }
