@@ -60,17 +60,22 @@
     @media screen and (max-width: 675px) {
 
         .qr-contact-btn {
-            margin-bottom: 20px;
+            /* margin-bottom: 20px; */
             padding: 0px;
             width: 200px;
             border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .qr-contact-btn:hover {
+            transform: scale(1.05);
         }
 
         a img {
             width: 175px;
             border-radius: 15px;
             padding: 0;
-            margin-top: 10px;
+            /* margin-top: 10px; */
             background-color: none;
         }
     }

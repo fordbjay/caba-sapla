@@ -80,6 +80,7 @@
       .tag-line {
         text-align: center;
         font-size: 40px;
+        margin-top: 20px;
       }
 
     }
