@@ -1,7 +1,12 @@
 <template>
     
     <div class="grid-container">
-        <div class="grid-el" v-for="(image, index) in images" :key="index" @click="expandPic(index)">
+        <div 
+            class="grid-el" 
+            v-for="(image, index) in images" 
+            :key="index" 
+            @click="expandPic(index)"
+        >
             <img :src="image" :alt="image">
         </div>
     </div>
