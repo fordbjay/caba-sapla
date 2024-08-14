@@ -42,16 +42,12 @@
 
 <style scoped>
 
-    a img {
-        width: 175px;
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgb(250, 247, 243);
-        box-sizing: border-box;
+    a {
+        line-height: 0;
     }
 
     .qr-contact-btn {
-        width: 175px;
+        width: 150px;
         border-radius: 10px;
         padding: 10px;
         background-color: rgb(250, 247, 243);

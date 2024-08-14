@@ -5,6 +5,7 @@
   <div style="position: relative;">
     
     <div class="footer">
+
       <div class="logo-year">
         <img style="width: 100px;" src="/cabasapla-logo-white.png" alt="cabasapla-logo-white.png">
         <h3>&copy; {{new Date().getFullYear()}}</h3>
@@ -18,7 +19,7 @@
       </a>
       
       <qrWaLink :desiredWidth="675"/>
-
+    
     </div>
 
   </div>
