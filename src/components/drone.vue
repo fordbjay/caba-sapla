@@ -12,7 +12,7 @@
       </div>
       
       <a 
-        href="https://drive.google.com/drive/folders/1fEd-Vu0mB_9R6LIhLfbOQ2335G5Hugu4?usp=drive_link"
+        :href="pressKitLink"
         target="_blank"
       >
         <p class="press-kit">Manager Press Kit</p>
@@ -31,6 +31,13 @@
 
   export default {
     components: { qrWaLink },
+
+    data() {
+      return {
+          pressKitLink: 'https://drive.google.com/drive/folders/1fEd-Vu0mB_9R6LIhLfbOQ2335G5Hugu4?usp=drive_link'
+      }
+    }
+    
   };
 
 </script>

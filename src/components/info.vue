@@ -24,8 +24,10 @@
             <li>Fully Furnished</li>
             <li>Fast Internet</li>
             <li>Smart TV</li>
+            <li>Large Fridge</li>
             <li>Air Conditioner</li>
             <li>Ceiling Fan</li>
+            <li>Huge Terrace</li>
         </ul>
         <img style="border-radius: 20px;" src="/exterior/exterior-2.jpg" alt="exterior-2.jpg">
    
