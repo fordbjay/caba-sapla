@@ -7,7 +7,7 @@
     <div class="footer">
 
       <div class="logo-year">
-        <img style="width: 100px;" src="/cabasapla-logo-white.png" alt="cabasapla-logo-white.png">
+        <img src="/cabasapla-logo-white.png" alt="cabasapla-logo-white.png">
         <h3>&copy; {{new Date().getFullYear()}}</h3>
       </div>
       
@@ -56,6 +56,10 @@
     font-family: 'beach-party';
   }
 
+  .logo-year img {
+    width: 100px;
+  }
+
   .press-kit {
     background-color: white;
     font-weight: 400;
@@ -96,14 +100,28 @@
 
     .footer {
       flex-direction: column;
-      align-items: start;
+      align-items: end;
       padding: 10px
     }
 
     .press-kit {
       margin: 10px 0;
     }
+
+    .logo-year {
+      flex-direction: column;
+    }
+
+    h3 {
+      font-size: 12px;
+    }
     
+  }
+
+  @media screen and (max-width: 350px) {
+    .logo-year img {
+      width: 75px;
+    }
   }
 
 </style>
