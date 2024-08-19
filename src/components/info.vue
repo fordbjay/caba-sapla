@@ -3,7 +3,7 @@
     <div class="main-container">
         <p>
             <span style="font-family: 'beach-party'; font-size: 30px;">Enjoy the best</span>
-            of Playa del Carmen, Mexico in our new, bright
+            of <span style="font-weight: bold; color: rgb(0, 99, 65);">Playa</span> <span style="font-weight: bold; color: white; -webkit-text-stroke: .5px black;">del</span> <span style="font-weight: bold; color: rgb(200, 16, 46); ">Carmen</span>, Mexico in our new, bright
             and well appointed studios in the heart of downtown.
             <br>
             <br>
