@@ -4,7 +4,7 @@
   
     <div class="inner-wrapper">
         <div class="logo-qr">
-            <img id="logo" src="/cabasapla-logo-white.png" alt="logo">
+            <img id="logo" src="/logo-white-600x-8.png" alt="logo">
             <qrWaLink :desiredWidth="675"/>
         </div>
         <p class="tag-line">Your Next Home <br> in the Riviera Maya</p>
@@ -82,13 +82,16 @@
         font-size: 40px;
         margin-top: 20px;
       }
+      #logo {
+        width: 250px;
+      }
 
     }
 
     @media screen and (max-height: 400px) {
 
       #logo {
-        width: 200px;
+        width: 100px;
       }
       .tag-line {
         font-size: 30px;

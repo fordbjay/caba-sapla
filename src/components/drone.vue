@@ -7,7 +7,7 @@
     <div class="footer">
 
       <div class="logo-year">
-        <img src="/cabasapla-logo-white.png" alt="cabasapla-logo-white.png">
+        <img src="/logo-white-600x-8.png" alt="cabasapla-logo-white.png">
         <h3>&copy; {{new Date().getFullYear()}}</h3>
       </div>
       
