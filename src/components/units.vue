@@ -88,7 +88,7 @@
                 units: [
                     {
                         name: 'A',
-                        price: '10,500',
+                        price: '10,000',
                         pics: [
                         "/units/a/IMG_4380.jpg", // FRONT TO BACK LEFT
                         "/units/a/IMG_4348.jpg", // FRONT TO BACK STRAIGHT
@@ -104,7 +104,7 @@
                     },
                     {
                         name: 'B',
-                        price: '12,500',
+                        price: '11,000',
                         pics: [
                             "/units/b/IMG_4237.jpg", // BACK TO FRONT STRAIGHT
                             "/units/b/IMG_4311.jpg", // BACK TO FRONT RIGHT
@@ -120,7 +120,7 @@
                     },
                     {
                         name: 'C',
-                        price: '11,500',
+                        price: '10,500',
                         pics: [
                             "/units/c/IMG_4323.jpg", // BACK TO FRONT RIGHT
                             "/units/c/IMG_4220.jpg", // FRONT TO BACK STRAIGHT
